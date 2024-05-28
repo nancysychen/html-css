@@ -11,8 +11,17 @@
         }
 
         table{
-            width: 500px;
+            width: 450px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
         }
                
         td, th{
@@ -23,9 +32,18 @@
             text-align: right;
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(62, 55, 55);
             color: white;
+        }
+        thead > tr> th{
+            position: sticky;
+            top: -1px;
+            background-color:rgb(62, 55, 55) ;
         }
 
     </style>
@@ -34,10 +52,11 @@
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -153,11 +172,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti delectus possimus, voluptate quibusdam animi maiores eaque optio corrupti perspiciatis in expedita neque! Quas quaerat molestiae a nemo laboriosam totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus optio assumenda cupiditate dicta explicabo perspiciatis eaque error laboriosam ipsam ut praesentium nisi quia officia, accusantium iure enim dolorem inventore magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti, assumenda libero velit sapiente earum a architecto. Harum temporibus eligendi necessitatibus aliquid, et magnam minima omnis, veniam quaerat atque odio.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti delectus possimus, voluptate quibusdam animi maiores eaque optio corrupti perspiciatis in expedita neque! Quas quaerat molestiae a nemo laboriosam totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus optio assumenda cupiditate dicta explicabo perspiciatis eaque error laboriosam ipsam ut praesentium nisi quia officia, accusantium iure enim dolorem inventore magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti, assumenda libero velit sapiente earum a architecto. Harum temporibus eligendi necessitatibus aliquid, et magnam minima omnis, veniam quaerat atque odio.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti delectus possimus, voluptate quibusdam animi maiores eaque optio corrupti perspiciatis in expedita neque! Quas quaerat molestiae a nemo laboriosam totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus optio assumenda cupiditate dicta explicabo perspiciatis eaque error laboriosam ipsam ut praesentium nisi quia officia, accusantium iure enim dolorem inventore magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti, assumenda libero velit sapiente earum a architecto. Harum temporibus eligendi necessitatibus aliquid, et magnam minima omnis, veniam quaerat atque odio.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti delectus possimus, voluptate quibusdam animi maiores eaque optio corrupti perspiciatis in expedita neque! Quas quaerat molestiae a nemo laboriosam totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus optio assumenda cupiditate dicta explicabo perspiciatis eaque error laboriosam ipsam ut praesentium nisi quia officia, accusantium iure enim dolorem inventore magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti, assumenda libero velit sapiente earum a architecto. Harum temporibus eligendi necessitatibus aliquid, et magnam minima omnis, veniam quaerat atque odio.</p>
 </body>
 </html>
